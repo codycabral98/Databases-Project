@@ -1,0 +1,11 @@
+CREATE TABLE external_tickets
+(
+user_ID int primary key,
+first_name varchar[15],
+last_name varchar[20],
+user_email varchar[40],
+ticket_no int
+)
+
+insert into external_tickets values(null, null, null, null, null)
+
