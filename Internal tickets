@@ -1,0 +1,5 @@
+CREATE TABLE internal_tickets(
+user_ID int primary key,
+department varchar,
+ticket_ID int,
+insert into, internal_tickets values(null, null, null)
