@@ -1,5 +1,11 @@
-CREATE TABLE internal_tickets(
+CREATE TABLE internal_tickets
+(
 user_ID int primary key,
-department varchar,
-ticket_ID int,
-insert into, internal_tickets values(null, null, null)
+first_name varchar[15],
+last_name varchar[20],
+email varchar[40],
+department varchar[20],
+ticket_no int,
+}
+
+insert into, internal_tickets values(null, null, null, null, null, null)
