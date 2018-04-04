@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Store">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="368.0" prefWidth="200.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="366.0" prefWidth="200.0">
+                                 <children>
+                                    <Label text="Games library (Scroll)" />
+                                 </children></AnchorPane>
+                          </content>
+                        </ScrollPane>
+                        <AnchorPane layoutX="200.0" prefHeight="367.0" prefWidth="202.0">
+                           <children>
+                              <Pane layoutX="2.0" prefHeight="164.0" prefWidth="200.0">
+                                 <children>
+                                    <PasswordField layoutX="17.0" layoutY="69.0" promptText="Password" />
+                                    <Button layoutX="69.0" layoutY="105.0" mnemonicParsing="false" text="Submit" />
+                                    <TextField layoutX="17.0" layoutY="31.0" promptText="Username" />
+                                    <Label layoutX="27.0" layoutY="6.0" text="Check purchase history" />
+                                    <ScrollPane layoutX="-5.0" layoutY="-3.0" opacity="0.45" prefHeight="170.0" prefWidth="208.0" />
+                                 </children>
+                              </Pane>
+                              <TextField layoutX="21.0" layoutY="200.0" promptText="User ID" />
+                              <Button layoutX="73.0" layoutY="333.0" mnemonicParsing="false" text="Submit" />
+                              <Label layoutX="47.0" layoutY="175.0" text="Ticket submission" />
+                              <TextArea layoutX="20.0" layoutY="236.0" prefHeight="89.0" prefWidth="169.0" promptText="Write a short description..." />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane layoutX="402.0" prefHeight="367.0" prefWidth="200.0">
+                           <children>
+                              <ScrollPane prefHeight="367.0" prefWidth="200.0">
+                                 <content>
+                                    <Label text="New items (Scroll)" />
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Management">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+            <Tab text="Public Relations">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="IT Support">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Quality Assurance">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Developer">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="370.0" prefWidth="600.0">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                          </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+    <AnchorPane layoutX="579.0" layoutY="193.0" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
