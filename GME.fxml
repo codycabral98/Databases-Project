@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Store">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+          <Tab text="Management">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="367.0" prefWidth="600.0">
+                           <children>
+                              <SplitPane dividerPositions="0.2709030100334448, 0.6839464882943144" prefHeight="367.0" prefWidth="607.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                                       <children>
+                                          <ScrollPane prefHeight="357.0" prefWidth="157.0">
+                                            <content>
+                                              <AnchorPane fx:id="ProjectDisplay" minHeight="0.0" minWidth="0.0" prefHeight="361.0" prefWidth="154.0" />
+                                            </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="365.0" prefWidth="282.0">
+                                       <children>
+                                          <ScrollPane layoutX="1.0" prefHeight="148.0" prefWidth="238.0">
+                                            <content>
+                                              <AnchorPane fx:id="EmployeeView" minHeight="0.0" minWidth="0.0" prefHeight="148.0" prefWidth="220.0" />
+                                            </content>
+                                          </ScrollPane>
+                                          <TextField fx:id="EIDEnter" layoutX="8.0" layoutY="157.0" prefHeight="27.0" prefWidth="100.0" promptText="EMP I.D" />
+                                          <TextField fx:id="PIDEnter" layoutX="122.0" layoutY="157.0" prefHeight="27.0" prefWidth="100.0" promptText="PROJ. I.D" />
+                                          <Button fx:id="AddProj" layoutX="7.0" layoutY="193.0" mnemonicParsing="false" text="Add to Project" />
+                                          <Button fx:id="DropProj" layoutX="123.0" layoutY="194.0" mnemonicParsing="false" text="Drop from Proj." />
+                                          <TextField fx:id="TIDEnter" layoutX="7.0" layoutY="257.0" prefHeight="27.0" prefWidth="100.0" promptText="Team I.D" />
+                                          <Button fx:id="AddTeam" layoutX="6.0" layoutY="298.0" mnemonicParsing="false" text="Add To Team" />
+                                          <Button fx:id="DropTeam" layoutX="114.0" layoutY="297.0" mnemonicParsing="false" text="Drop From Team" />
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="365.0" prefWidth="127.0">
+                                       <children>
+                                          <ScrollPane layoutX="-1.0" prefHeight="204.0" prefWidth="187.0">
+                                            <content>
+                                              <AnchorPane fx:id="TicketView" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" />
+                                            </content>
+                                          </ScrollPane>
+                                          <TextField fx:id="TIDTID" layoutX="6.0" layoutY="221.0" prefHeight="27.0" prefWidth="80.0" promptText="Ticket I.D" />
+                                          <Button fx:id="toQa" layoutX="5.0" layoutY="258.0" mnemonicParsing="false" text="Send To QA" />
+                                          <Button fx:id="Resolve" layoutX="110.0" layoutY="259.0" mnemonicParsing="false" text="Resolve" />
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Public Relations">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="IT Support">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Quality Assurance">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Developer">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
