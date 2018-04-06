@@ -42,58 +42,46 @@
                            <children>
                               <Pane layoutX="14.0" prefHeight="200.0" prefWidth="200.0">
                                  <children>
-                                    <Accordion layoutX="-1.0" layoutY="36.0">
-                                      <panes>
-                                        <TitledPane animated="false" expanded="false" text="Specific Tickets ">
-                                          <content>
-                                                <HBox prefHeight="200.0" prefWidth="138.0">
-                                                   <children>
-                                                      <VBox>
-                                                         <children>
-                                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="393.0">
-                                                               <children>
-                                                                  <TextField layoutY="1.0" />
-                                                                  <TextField editable="false" layoutY="39.0" />
-                                                                  <TextField layoutY="77.0" />
-                                                                  <TextField layoutY="114.0" />
-                                                                  <TextField layoutY="153.0" />
-                                                               </children>
-                                                            </AnchorPane>
-                                                         </children>
-                                                      </VBox>
-                                                   </children>
-                                                </HBox>
-                                          </content>
-                                        </TitledPane>
-                                        <TitledPane animated="false" prefHeight="174.0" prefWidth="281.0" text="Resolved Tickets " textOverrun="CENTER_ELLIPSIS">
-                                          <content>
-                                                <SplitPane>
-                                                   <items>
-                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                                         <children>
-                                                            <TextField layoutY="14.0" />
-                                                            <TextField layoutY="53.0" />
-                                                            <TextField layoutY="90.0" />
-                                                            <TextField layoutY="128.0" />
-                                                            <CheckBox layoutX="173.0" layoutY="19.0" mnemonicParsing="false" text="RESOLVED" textAlignment="RIGHT" />
-                                                            <CheckBox layoutX="175.0" layoutY="58.0" mnemonicParsing="false" text="RESOLVED" />
-                                                            <CheckBox layoutX="175.0" layoutY="95.0" mnemonicParsing="false" text="RESOLVED" />
-                                                            <CheckBox layoutX="175.0" layoutY="133.0" mnemonicParsing="false" text="RESOLVED" />
-                                                         </children>
-                                                         <effect>
-                                                            <Reflection />
-                                                         </effect>
-                                                      </AnchorPane>
-                                                   </items>
-                                                </SplitPane>
-                                          </content>
-                                        </TitledPane>
-                                      </panes>
-                                    </Accordion>
+                                    <Accordion layoutX="-1.0" layoutY="36.0" />
                                  </children>
                               </Pane>
                            </children>
                         </Pane>
+                      <TitledPane animated="false" collapsible="false" layoutX="300.0" layoutY="57.0" prefHeight="196.0" prefWidth="281.0" text="Resolved Tickets " textAlignment="RIGHT" textOverrun="CENTER_ELLIPSIS">
+                        <content>
+                              <SplitPane>
+                                 <items>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="157.0" prefWidth="279.0">
+                                       <children>
+                                          <TextField layoutY="14.0" />
+                                          <TextField layoutY="53.0" />
+                                          <TextField layoutY="90.0" />
+                                          <TextField layoutY="128.0" />
+                                          <CheckBox layoutX="173.0" layoutY="19.0" mnemonicParsing="false" text="RESOLVED" textAlignment="RIGHT" />
+                                          <CheckBox layoutX="175.0" layoutY="58.0" mnemonicParsing="false" text="RESOLVED" />
+                                          <CheckBox layoutX="175.0" layoutY="95.0" mnemonicParsing="false" text="RESOLVED" />
+                                          <CheckBox layoutX="175.0" layoutY="133.0" mnemonicParsing="false" text="RESOLVED" />
+                                       </children>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                    </AnchorPane>
+                                 </items>
+                              </SplitPane>
+                        </content>
+                      </TitledPane>
+                        <TitledPane animated="false" collapsible="false" layoutX="26.0" layoutY="57.0" text="Specific Tickets">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <TextField layoutY="14.0" />
+                                    <TextField layoutY="52.0" />
+                                    <TextField layoutY="90.0" />
+                                    <TextField layoutY="128.0" />
+                                 </children>
+                              </AnchorPane>
+                          </content>
+                        </TitledPane>
                      </children>
                      <opaqueInsets>
                         <Insets />
@@ -117,5 +105,6 @@
             </Tab>
         </tabs>
       </TabPane>
+      <CheckBox layoutX="165.0" layoutY="-18.0" mnemonicParsing="false" text="CheckBox" />
    </children>
 </AnchorPane>
